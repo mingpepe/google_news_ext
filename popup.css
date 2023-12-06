@@ -1,0 +1,72 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#addedUrls {
+    margin-bottom: 10px;
+}
+
+.added-url {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.added-url span {
+    margin-right: 10px;
+}
+
+.added-url button {
+    width: 100px;
+    padding: 4px 8px;
+    /* Adjust button size as needed */
+    background-color: #ff5252;
+    /* Red color for delete button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.added-url button:hover {
+    background-color: #ff1a1a;
+}
