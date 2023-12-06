@@ -41,22 +41,22 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-#addedUrls {
+#addedKeywords {
     margin-bottom: 10px;
 }
 
-.added-url {
+.added-keyword {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
-.added-url span {
+.added-keyword span {
     margin-right: 10px;
 }
 
-.added-url button {
+.added-keyword button {
     width: 100px;
     padding: 4px 8px;
     /* Adjust button size as needed */
@@ -67,6 +67,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.added-url button:hover {
+.added-keyword button:hover {
     background-color: #ff1a1a;
 }

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function addKeywordToUI(keyword) {
         const addedKeywordElement = document.createElement('div');
-        addedKeywordElement.classList.add('added-url');
+        addedKeywordElement.classList.add('added-keyword');
 
         const keywordLabel = document.createElement('span');
         keywordLabel.textContent = keyword;
