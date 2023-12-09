@@ -1,1 +1,1 @@
-# google_news_helper
+# google news chrome extension
