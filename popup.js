@@ -2,12 +2,19 @@ function keyword2googleNewsUrl(keyword) {
     return `https://news.google.com/search?q=${encodeURIComponent(keyword)}&hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant`;
 }
 
-function open() {
+async function open() {
+    // Need "tabs" permission in manifest to get url
+    const tabs = await chrome.tabs.query({});
     chrome.storage.local.get(['keywords'], function (result) {
         const keywords = result.keywords || [];
         for (const keyword of keywords) {
             const url = keyword2googleNewsUrl(keyword);
-            chrome.tabs.create({ url, active: false });
+            const exist = tabs.some(tab => tab.url === url);
+            if (exist) {
+                console.log(`${url} already exist`);
+            } else {
+                chrome.tabs.create({ url, active: false });
+            }
         }
     });
 }
